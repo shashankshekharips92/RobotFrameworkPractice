@@ -6,6 +6,7 @@ Resource    ../Locators/HomePageLocators.robot
 Go To Home Page
     Go To    ${HOME_URL}
     Wait Until Element Is Visible    ${HEADING}
+    
 Verify Homepage is Loaded
     Element Should Be Visible    ${HEADING}
     Element Should Be Visible    ${SUBHEADING}
