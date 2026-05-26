@@ -1,178 +1,215 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.12.2 on win32)" generated="2026-05-25T21:06:14.392838" rpa="false" schemaversion="5">
-<suite id="s1" name="TC1" source="D:\Shashank\GitRepo\RobotFrameworkPractice\Robot Framework\Tests\TC1.robot">
-<test id="s1-t1" name="TC1 - Verify Welcome Page" line="12">
+<robot generator="Robot 7.4.2 (Python 3.12.2 on win32)" generated="2026-05-26T08:25:42.361673" rpa="false" schemaversion="5">
+<suite id="s1" name="TCs" source="D:\Shashank\GitRepo\RobotFrameworkPractice\Robot Framework\Tests\TCs.robot">
+<test id="s1-t1" name="TC1 - Verify Welcome Page" line="13">
 <kw name="Open Browser and goto URL" owner="CommonKeywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-05-25T21:06:15.266526" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/'.</msg>
+<msg time="2026-05-26T08:25:43.103712" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-05-25T21:06:15.266526" elapsed="6.837920"/>
+<status status="PASS" start="2026-05-26T08:25:43.103712" elapsed="5.132229"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-05-25T21:06:22.104446" elapsed="0.043111"/>
+<status status="PASS" start="2026-05-26T08:25:48.237079" elapsed="0.031406"/>
 </kw>
 <arg>${URL}</arg>
 <arg>${Browser}</arg>
-<status status="PASS" start="2026-05-25T21:06:15.263633" elapsed="6.883924"/>
-</kw>
-<kw name="Go To Home Page" owner="HomePage">
-<kw name="Go To" owner="SeleniumLibrary">
-<msg time="2026-05-25T21:06:22.152021" level="INFO">Opening url 'https://the-internet.herokuapp.com/'</msg>
-<arg>${HOME_URL}</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2026-05-25T21:06:22.152021" elapsed="0.368684"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${HEADING}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-05-25T21:06:22.520705" elapsed="0.424933"/>
-</kw>
-<status status="PASS" start="2026-05-25T21:06:22.147557" elapsed="0.798081"/>
+<status status="PASS" start="2026-05-26T08:25:43.101651" elapsed="5.166834"/>
 </kw>
 <kw name="Verify Homepage is Loaded" owner="HomePage">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2026-05-25T21:06:22.971213" level="INFO">Element 'xpath=//h1[text()='Welcome to the-internet']' is displayed.</msg>
+<msg time="2026-05-26T08:25:48.307893" level="INFO">Element 'xpath=//h1[text()='Welcome to the-internet']' is displayed.</msg>
 <arg>${HEADING}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2026-05-25T21:06:22.951552" elapsed="0.019661"/>
+<status status="PASS" start="2026-05-26T08:25:48.270869" elapsed="0.037024"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2026-05-25T21:06:23.005502" level="INFO">Element 'xpath=//h2[text()='Available Examples']' is displayed.</msg>
+<msg time="2026-05-26T08:25:48.323215" level="INFO">Element 'xpath=//h2[text()='Available Examples']' is displayed.</msg>
 <arg>${SUBHEADING}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2026-05-25T21:06:22.974121" elapsed="0.031381"/>
+<status status="PASS" start="2026-05-26T08:25:48.307893" elapsed="0.015322"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2026-05-25T21:06:23.023160" level="INFO">Current page contains text 'Welcome to the-internet'.</msg>
+<msg time="2026-05-26T08:25:48.357710" level="INFO">Current page contains text 'Welcome to the-internet'.</msg>
 <arg>Welcome to the-internet</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2026-05-25T21:06:23.005502" elapsed="0.017658"/>
+<status status="PASS" start="2026-05-26T08:25:48.323215" elapsed="0.034495"/>
 </kw>
-<status status="PASS" start="2026-05-25T21:06:22.945638" elapsed="0.082432"/>
+<status status="PASS" start="2026-05-26T08:25:48.269863" elapsed="0.087847"/>
 </kw>
 <kw name="Close All Browsers" owner="CommonKeywords">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-05-25T21:06:23.029341" elapsed="2.421217"/>
+<status status="PASS" start="2026-05-26T08:25:48.358739" elapsed="2.315231"/>
 </kw>
-<status status="PASS" start="2026-05-25T21:06:23.028070" elapsed="2.422488"/>
+<status status="PASS" start="2026-05-26T08:25:48.358739" elapsed="2.315231"/>
 </kw>
 <doc>Verify the-internet homepage loads correctly</doc>
 <tag>Homepage</tag>
 <tag>Smoke</tag>
-<status status="PASS" start="2026-05-25T21:06:15.263633" elapsed="10.186925"/>
+<status status="PASS" start="2026-05-26T08:25:43.100172" elapsed="7.574543"/>
 </test>
 <test id="s1-t2" name="TC2 - Verify All Links Present" line="19">
 <kw name="Open Browser and goto URL" owner="CommonKeywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-05-25T21:06:25.450558" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/'.</msg>
+<msg time="2026-05-26T08:25:50.678035" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-05-25T21:06:25.450558" elapsed="5.292501"/>
+<status status="PASS" start="2026-05-26T08:25:50.678035" elapsed="5.461408"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-05-25T21:06:30.744760" elapsed="0.039027"/>
+<status status="PASS" start="2026-05-26T08:25:56.139443" elapsed="0.033360"/>
 </kw>
 <arg>${URL}</arg>
 <arg>${Browser}</arg>
-<status status="PASS" start="2026-05-25T21:06:25.450558" elapsed="5.334402"/>
-</kw>
-<kw name="Go To Home Page" owner="HomePage">
-<kw name="Go To" owner="SeleniumLibrary">
-<msg time="2026-05-25T21:06:30.784960" level="INFO">Opening url 'https://the-internet.herokuapp.com/'</msg>
-<arg>${HOME_URL}</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2026-05-25T21:06:30.784960" elapsed="0.376983"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${HEADING}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-05-25T21:06:31.161943" elapsed="0.044264"/>
-</kw>
-<status status="PASS" start="2026-05-25T21:06:30.784960" elapsed="0.421247"/>
+<status status="PASS" start="2026-05-26T08:25:50.677031" elapsed="5.495772"/>
 </kw>
 <kw name="Verify All links are Visible" owner="HomePage">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2026-05-25T21:06:31.243403" level="INFO">Element 'xpath=//a[text()='A/B Testing']' is displayed.</msg>
+<msg time="2026-05-26T08:25:56.207160" level="INFO">Element 'xpath=//a[text()='A/B Testing']' is displayed.</msg>
 <arg>${A/B Testing}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2026-05-25T21:06:31.206207" elapsed="0.037196"/>
+<status status="PASS" start="2026-05-26T08:25:56.172803" elapsed="0.036361"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2026-05-25T21:06:31.278204" level="INFO">Element 'xpath=//a[text()='Add/Remove Elements']' is displayed.</msg>
+<msg time="2026-05-26T08:25:56.230431" level="INFO">Element 'xpath=//a[text()='Add/Remove Elements']' is displayed.</msg>
 <arg>${Add/Remove Elements}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2026-05-25T21:06:31.243403" elapsed="0.034801"/>
+<status status="PASS" start="2026-05-26T08:25:56.209164" elapsed="0.021267"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2026-05-25T21:06:31.312629" level="INFO">Element 'xpath=//a[text()='Basic Auth']' is displayed.</msg>
+<msg time="2026-05-26T08:25:56.253004" level="INFO">Element 'xpath=//a[text()='Basic Auth']' is displayed.</msg>
 <arg>${Basic Auth}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2026-05-25T21:06:31.278204" elapsed="0.034425"/>
+<status status="PASS" start="2026-05-26T08:25:56.230431" elapsed="0.022573"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2026-05-25T21:06:31.344914" level="INFO">Element 'xpath=//a[text()='Broken Images']' is displayed.</msg>
+<msg time="2026-05-26T08:25:56.280736" level="INFO">Element 'xpath=//a[text()='Broken Images']' is displayed.</msg>
 <arg>${Broken Images}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2026-05-25T21:06:31.312629" elapsed="0.032285"/>
+<status status="PASS" start="2026-05-26T08:25:56.253004" elapsed="0.027732"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2026-05-25T21:06:31.378936" level="INFO">Element 'xpath=//a[text()='Challenging DOM']' is displayed.</msg>
+<msg time="2026-05-26T08:25:56.292723" level="INFO">Element 'xpath=//a[text()='Challenging DOM']' is displayed.</msg>
 <arg>${Challenging DOM}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2026-05-25T21:06:31.346440" elapsed="0.032496"/>
+<status status="PASS" start="2026-05-26T08:25:56.280736" elapsed="0.011987"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2026-05-25T21:06:31.418639" level="INFO">Element 'xpath=//a[text()='Checkboxes']' is displayed.</msg>
+<msg time="2026-05-26T08:25:56.327408" level="INFO">Element 'xpath=//a[text()='Checkboxes']' is displayed.</msg>
 <arg>${Checkboxes}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2026-05-25T21:06:31.378936" elapsed="0.039703"/>
+<status status="PASS" start="2026-05-26T08:25:56.292723" elapsed="0.034685"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2026-05-25T21:06:31.453145" level="INFO">Element 'xpath=//a[text()='Context Menu']' is displayed.</msg>
+<msg time="2026-05-26T08:25:56.357055" level="INFO">Element 'xpath=//a[text()='Context Menu']' is displayed.</msg>
 <arg>${Context Menu}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2026-05-25T21:06:31.418639" elapsed="0.034506"/>
+<status status="PASS" start="2026-05-26T08:25:56.327408" elapsed="0.029647"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2026-05-25T21:06:31.466293" level="INFO">Element 'xpath=//a[text()='Digest Authentication']' is displayed.</msg>
+<msg time="2026-05-26T08:25:56.377539" level="INFO">Element 'xpath=//a[text()='Digest Authentication']' is displayed.</msg>
 <arg>${Digest Authentication}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2026-05-25T21:06:31.453145" elapsed="0.028910"/>
+<status status="PASS" start="2026-05-26T08:25:56.357055" elapsed="0.020484"/>
 </kw>
-<status status="PASS" start="2026-05-25T21:06:31.206207" elapsed="0.275848"/>
+<status status="PASS" start="2026-05-26T08:25:56.172803" elapsed="0.204736"/>
 </kw>
 <kw name="Close All Browsers" owner="CommonKeywords">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-05-25T21:06:31.482055" elapsed="2.426776"/>
+<status status="PASS" start="2026-05-26T08:25:56.377539" elapsed="2.330424"/>
 </kw>
-<status status="PASS" start="2026-05-25T21:06:31.482055" elapsed="2.426776"/>
+<status status="PASS" start="2026-05-26T08:25:56.377539" elapsed="2.330424"/>
 </kw>
 <doc>Verify All links are Present in Homepage</doc>
 <tag>Navigation</tag>
 <tag>Regression</tag>
-<status status="PASS" start="2026-05-25T21:06:25.450558" elapsed="8.458273"/>
+<status status="PASS" start="2026-05-26T08:25:50.675833" elapsed="8.033295"/>
 </test>
-<status status="PASS" start="2026-05-25T21:06:14.398861" elapsed="19.509970"/>
+<test id="s1-t3" name="TC3 - Test A/B Testing" line="25">
+<try>
+<branch type="TRY">
+<kw name="Open Browser and goto URL" owner="CommonKeywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-05-26T08:25:58.712129" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-05-26T08:25:58.711128" elapsed="4.284851"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-05-26T08:26:02.996980" elapsed="0.030554"/>
+</kw>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<status status="PASS" start="2026-05-26T08:25:58.711128" elapsed="4.316406"/>
+</kw>
+<kw name="Navigate To A/B Testing" owner="HomePage">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-05-26T08:26:03.028534" level="INFO">Clicking element 'xpath=//a[text()='A/B Testing']'.</msg>
+<arg>${A/B Testing}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-26T08:26:03.028534" elapsed="0.520761"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<msg time="2026-05-26T08:26:08.704918" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-05-26T08:26:08.704918" level="FAIL">Text 'A/B Test Variation 1' did not appear in 5 seconds.</msg>
+<arg>A/B Test Variation 1</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="FAIL" start="2026-05-26T08:26:03.550509" elapsed="5.154409">Text 'A/B Test Variation 1' did not appear in 5 seconds.</status>
+</kw>
+<status status="FAIL" start="2026-05-26T08:26:03.027534" elapsed="5.677384">Text 'A/B Test Variation 1' did not appear in 5 seconds.</status>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${A/B_Testing_Heading}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-05-26T08:26:08.704918" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2026-05-26T08:25:58.711128" elapsed="9.993790">Text 'A/B Test Variation 1' did not appear in 5 seconds.</status>
+</branch>
+<branch type="EXCEPT" assign="${error_message}">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-05-26T08:26:08.704918" level="INFO">Error was Text 'A/B Test Variation 1' did not appear in 5 seconds.</msg>
+<arg>Error was ${error_message}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-05-26T08:26:08.704918" elapsed="0.000000"/>
+</kw>
+<kw name="Take Screenshot on Failure" owner="CommonKeywords">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-05-26T08:26:08.795450" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-05-26T08:26:08.704918" elapsed="0.090532"/>
+</kw>
+<status status="PASS" start="2026-05-26T08:26:08.704918" elapsed="0.090532"/>
+</kw>
+<status status="PASS" start="2026-05-26T08:26:08.704918" elapsed="0.090532"/>
+</branch>
+<status status="PASS" start="2026-05-26T08:25:58.711128" elapsed="10.084322"/>
+</try>
+<doc>Test A/B Testing Page</doc>
+<tag>Regression</tag>
+<status status="PASS" start="2026-05-26T08:25:58.710128" elapsed="10.085322"/>
+</test>
+<status status="PASS" start="2026-05-26T08:25:42.365676" elapsed="26.434392"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 <stat pass="1" fail="0" skip="0">Homepage</stat>
 <stat pass="1" fail="0" skip="0">Navigation</stat>
-<stat pass="1" fail="0" skip="0">Regression</stat>
+<stat pass="2" fail="0" skip="0">Regression</stat>
 <stat pass="1" fail="0" skip="0">Smoke</stat>
 </tag>
 <suite>
-<stat name="TC1" id="s1" pass="2" fail="0" skip="0">TC1</stat>
+<stat name="TCs" id="s1" pass="3" fail="0" skip="0">TCs</stat>
 </suite>
 </statistics>
 <errors>
